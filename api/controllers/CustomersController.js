@@ -1,5 +1,5 @@
 /**
- * EmployeeController
+ * CustomersController
  *
  * @description :: Server-side logic for managing employees
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
@@ -7,7 +7,7 @@
 
 var Client = require('node-rest-client').Client;
 var client = new Client();
-var endpoint = "http://localhost:1337/employee"
+var endpoint = "http://localhost:1337/customers"
 
 module.exports = {
 
@@ -39,14 +39,14 @@ module.exports = {
 
 
   /**
-   * `EmployeeController.read()`
+   * `CustomersController.read()`
    */
   read: function (req, res) {
 
     client.get(endpoint, function (data, response) {
-        return res.view('read', {employees: data});
+        return res.view('read', {Customers: data});
     }).on('error', function (err) {
-        return res.view('read', {error: { message: "There was an error getting the employees"}});
+        return res.view('read', {error: { message: "There was an error getting the records"}});
     });
 
   },

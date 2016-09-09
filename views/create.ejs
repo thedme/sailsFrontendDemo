@@ -1,12 +1,12 @@
 <ol class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class="active">Add Employee</a></li>
+    <li class="active">Add Customer</a></li>
 </ol>
 
 <br/>
 <%- partial ('partials/statusmessage.ejs') %>
 
-<h2>Add Employee</h2>
+<h2>Add Customer</h2>
 <form action="/create" method="POST" class="form-horizontal">
   <div class="form-group">
     <label for="firstName" class="col-sm-2 control-label">First Name</label>
@@ -15,36 +15,24 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="lastName" class="col-sm-2 control-label">First Name</label>
+    <label for="lastName" class="col-sm-2 control-label">Last Name</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="lastName" name="lastName"  placeholder="Last Name">
     </div>
   </div>
   <div class="form-group">
-    <label for="email" class="col-sm-2 control-label">Email Address</label>
+    <label for="Shipping Address" class="col-sm-2 control-label">Shipping Address</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="email" name="email" placeholder="user@example.com">
+      <input type="email" class="form-control" id="Shipping Address" name="Shipping Address" placeholder="300 Wilson lane, Baltimore MD 21215">
     </div>
   </div>
   <div class="form-group">
-    <label for="homePhone" class="col-sm-2 control-label">Home Phone</label>
+    <label for="Number Of Purchases" class="col-sm-2 control-label">Number Of Purchases</label>
     <div class="col-sm-10">
-      <input type="phone" class="form-control" id="homePhone" name="homePhone" placeholder="###-###-####">
+      <input type="Number Of Purchases" class="form-control" id="Number Of Purchases" name="homePhone" placeholder="0 - 99999999999999">
     </div>
-  </div>
-  <div class="form-group">
-    <label for="cellPhone" class="col-sm-2 control-label">Cell Phone</label>
-    <div class="col-sm-10">
-      <input type="phone" class="form-control" id="cellPhone" name="cellPhone" placeholder="###-###-####">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="password" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="password" name="password" aria-describedby="helpBlock">
-      <span id="helpBlock" class="help-block">Password at least 8 characters, 1 upppercase, 1 lowercase, and one number</span>
-    </div>
-  </div>
+  
+  
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <div class="radio">
@@ -63,7 +51,7 @@
   </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Add Employee</button>
+      <button type="submit" class="btn btn-default">Add Customer</button>
     </div>
   </div>
 </form>
